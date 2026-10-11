@@ -29,7 +29,7 @@ fn recover_applications() {
 
 pub fn get_keybinds() -> KeyBindings {
     KeyBindings::new()
-        .bind(KeyChord::new(ShortcutKey::T).control(), open_terminal)
+        .bind(KeyChord::new(ShortcutKey::T).control().alt(), open_terminal)
         .bind(KeyChord::new(ShortcutKey::Q).control(), quit_shell)
         .bind(
             KeyChord::new(ShortcutKey::R).control().shift(),
